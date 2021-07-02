@@ -1,0 +1,24 @@
+<launch>
+  <node name="task5_perception" pkg="final_task" type="task5_perception">
+    <rosparam>
+      cloud_topic: "/camera2/depth/points2"
+      world_frame: "base_link"
+      camera_frame: "camera_link2"
+      voxel_leaf_size: 0.005 <!-- mm -->
+      x_filter_min: -2.5 <!-- m -->
+      x_filter_max: 2.5 <!-- m -->
+      y_filter_min: -2.5 <!-- m -->
+      y_filter_max: 2.5 <!-- m -->
+      z_filter_min: -2.5 <!-- m -->
+      z_filter_max: 2.5 <!-- m -->
+      plane_max_iterations: 100
+      plane_distance_threshold: 0.05
+      cluster_tolerance: 0.01
+      cluster_min_size: 250
+      cluster_max_size: 500000
+      num: 1
+    </rosparam>
+  </node>
+
+</launch>
+

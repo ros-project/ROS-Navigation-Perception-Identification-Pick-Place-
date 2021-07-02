@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+<node pkg="final_task" name="controller" type="detector.py" > 
+  </node>
+</launch>

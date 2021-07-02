@@ -1,0 +1,6 @@
+<launch>
+
+  <node name="motion_planning" pkg="ebot_task4" type="motion_planning" respawn="false" output="screen">
+  </node>
+
+</launch>

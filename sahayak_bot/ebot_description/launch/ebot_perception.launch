@@ -1,0 +1,5 @@
+<launch>
+<include file="$(find ebot_description)/launch/perception.launch" />
+
+<node name="Final" pkg="ebot_task4" type="Final.py" />
+</launch>
